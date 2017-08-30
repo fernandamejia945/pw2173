@@ -1,4 +1,8 @@
 Primer linea del proyecto
 Segunda linea del proyecto
 
+<<<<<<< HEAD
 Esta AQUI HAY CAMBIO MASTER linea es de la rama experimento x3
+=======
+AQUI HAY CAMBIO DE EXPERIMENTO Esta linea es de la rama experimento x3
+>>>>>>> experimento
