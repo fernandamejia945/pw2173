@@ -1,0 +1,24 @@
+/*CSS = Hojas de estilo de cascada
+¿Para qué sirve?:
+	estilos
+	maquetear
+	diseño y color
+
+pseudoelementos @
+selectores - cambian atributos
+	etiquetas ejem. p, html, div
+	identificador ejem. #id 
+	clases ejem. class .class
+media queries - diseño adaptativo
+
+NOTA: Todo el orden alfabetico*/
+
+body{
+	background: rgb(100,100,100); 
+	/* rgba(34,56,2,1) alfa,transparencia, 1=solido*/
+	/*#000000; hexadecimal*/
+	/* red, blue*/
+	color: white;
+	width: 1024px;
+}
+
