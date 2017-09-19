@@ -20,5 +20,21 @@ body{
 	/* red, blue*/
 	color: white;
 	width: 1024px;
+	border: 1px solid red;
+}
+header{
+	text-align: center;
+}
+header img{
+	float: right;
+	width: 90px;
+}
+header nav ul li {
+	background: blue;
+	color: green;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	padding: 5px 8px 5px 8px;
+	border-radius: 5px;
 }
 
