@@ -4,3 +4,42 @@ body{
 	margin: 0 auto;
 	max-width: 1024px;
 }
+form{
+	float: right;
+	margin-right: 15px;
+	margin-top: -40px;
+}
+form input{ /*todos los input en el form*/
+	border-radius: 5px;
+}
+form input[type="button"]{
+	background: green;
+	color:white;
+}
+header{
+	background: #DBE6E9;
+}
+
+header nav {
+	background: #0E6CB0;
+	border-radius: 5px;
+	padding: 2px 0px 2px 0px;
+	margin: 0 auto;
+	width: 99%;
+}
+header nav ul li{
+	color: white;
+	display: inline-block;
+	margin-right: 20px;
+}
+#seccion01 article{
+	text-align: center;
+}
+#seccion01 article img{
+	border: 5px solid rgba(110,110,110,0.5);
+	margin-top: 15px;
+	width: 98%;
+}
+#logo{  /*es un ID*/
+	margin-top: -150px;
+}
