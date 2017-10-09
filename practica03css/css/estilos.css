@@ -1,0 +1,10 @@
+body{
+	max-width: 1024px;
+	min-width: 1024px;
+	margin: 0 auto;
+	font-size: 16px; /*1em*/
+}
+header nav {
+	background: orange;
+	border-radius: 5px;
+}
