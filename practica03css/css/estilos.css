@@ -7,4 +7,30 @@ body{
 header nav {
 	background: orange;
 	border-radius: 5px;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+header nav ul li{
+	color: white;
+	display: inline-block;
+	margin-right: 20px;
+}
+.iconos{
+	float: right;
+	margin-top: 20px;
+}
+#seccion01 article{
+	display: inline-block;
+}
+#secc01art01{
+	/*text-align: center*/
+	width: 60%;
+}
+#secc01art02{
+	text-align: center;
+	width: 30%;
+}
+#secc01art03{
+	text-align: center;
+	width: 30%;
 }
