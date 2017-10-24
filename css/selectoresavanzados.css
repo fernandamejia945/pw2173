@@ -52,3 +52,40 @@ Hermano general*/
 h2 ~ p{
 	color: grey;
 }
+/*Poner en color rojo el texto de los section
+menos el id="referencias"*/
+#resumen, #experimento, #pruebas, #resultados, #conclusiones
+{
+	color: tomato;
+}
+/* Seleccionar todos menos la que no quiero*/
+section:not(#referencias)
+{
+	color: hotpink;
+}
+/*Seleccionar elemento LI pares e impares*/
+li:nth-child(odd) /*impar*/
+{
+	color: blue;
+}
+li:nth-child(even) /*par*/
+{
+	color: green;
+}
+li:nth-child(5) /*quinto elemento*/
+{
+	color: red;
+}
+li:nth-last-child(1)
+{
+	color: yellow
+}
+/*Primer y Ultimo elemento*/
+article:first-child
+{
+	color: purple;
+}
+article:last-child
+{
+	color: yellow;
+}
