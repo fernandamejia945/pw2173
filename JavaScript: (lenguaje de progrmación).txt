@@ -1,0 +1,16 @@
+JavaScript: (lenguaje de progrmación)
+* Se integra con HTML para validaciones
+* LiveScript (menos poderoso)
+* Sintáxix JAVA (If, while,etc..)
+* Punto y coma es opcional (recomienda)
+* Elimina el ocultamiento
+(Se mira el código del lado del cliente)
+* Existe JavaScript del lado del servidor en distintas aplicaciones
+* No es tipado, es decir, no hay que declarar el tipo de variables.
+
+for(var i=0; i<5; i++){alert("jajajajaja");}
+document.write("Este mensaje sustituye la página");
+var suma2 = function(k,l){return k+l;}
+function suma(i,j){return i+j;}
+var confimation = (confirm("¿Está seguro de borrar GIT?"));
+var nombre = prompt("Escribe tu nombre");
