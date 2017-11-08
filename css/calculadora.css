@@ -3,11 +3,12 @@ body{
 	margin: 0 auto;
 	max-width: 1024px;
 	text-align: center;
+	background: lightblue;
 }
 form{
 	background: violet;
 	color: white;
-	border: 1px solid black;
+	border: 1px solid pink;
 	border-radius: 5px;
 	box-shadow: 15px 15px 15px pink;
 	margin: 0 auto;
@@ -19,4 +20,5 @@ form input{
 	font-size: 20px;
 	color: white;
 	background: black;
+	margin-left: 30px;
 }
