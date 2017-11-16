@@ -15,6 +15,7 @@ function muestraPantallaPrincipal(){
 		slashes:true
 	}))
 	PantallaPrincipal.show();
+	PantallaPrincipal.webContents.openDevTools();
 }
 
 //Encender la app

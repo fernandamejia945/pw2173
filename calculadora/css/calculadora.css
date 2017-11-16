@@ -22,3 +22,11 @@ form input{
 	background: black;
 	margin-left: 30px;
 }
+#btnCientifica{
+	background: black;
+	color:white;
+	height: 40px;
+	width: 90px;
+	font-weight: bold;
+	border-radius: 5px;
+}
