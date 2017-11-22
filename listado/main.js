@@ -6,7 +6,14 @@ const path = require('path'); //Muestra la ruta del archivo
 const url = require('url'); //Carga una página
 // ECMASCRIPT = 6
 let PantallaPrincipal;
-
+//Objeto global para compartir datos entre pantallas
+global.infoUsuarios = {
+	nombre: '',
+	genero: '',
+	foto: '',
+	direccion: '',
+	telefono: ''
+}
 function muestraPantallaPrincipal(){
 	PantallaPrincipal = new BrowserWindow({width:320,height:425});
 	PantallaPrincipal.loadURL(url.format({
@@ -14,7 +21,7 @@ function muestraPantallaPrincipal(){
 		protocol: 'file',
 		slashes: true
 	}))
-	PantallaPrincipal.webContents.openDevTools();
+	//PantallaPrincipal.webContents.openDevTools();
 	PantallaPrincipal.show();
 }
 
