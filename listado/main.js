@@ -4,6 +4,17 @@
 const {app,BrowserWindow} = require('electron');
 const path = require('path'); //Muestra la ruta del archivo
 const url = require('url'); //Carga una página
+//Constantes para PDF
+const electron = require('electron');
+//Sistema de archivos 
+const fs = require('fs');
+//Acceso al sistema operativo
+const os = require('os');
+//Para declarar una funcion remota
+const ipc = electron.ipcMain;
+//Acceso a la terminal-linea de comandos
+const shell = electron.shell;
+
 // ECMASCRIPT = 6
 let PantallaPrincipal;
 //Objeto global para compartir datos entre pantallas
@@ -24,9 +35,23 @@ function muestraPantallaPrincipal(){
 	//PantallaPrincipal.webContents.openDevTools();
 	PantallaPrincipal.show();
 }
+//Evento para PDF (DECLARACIÓN)
+ipc.on('print-to-pdf',function(event){
+	const pdfPath = path.join(os.tmpdir(),'print.pdf')
+	const win= BrowserWindow.fromWebContents(event.sender)
+	win.webContents.printToPDF({},function(error,data){
+		if(error) throw error
+		fs.writeFile(pdfPath,data,function(error){
+			if(error){
+				throw error
+		    }
+			shell.openExternal('file://'+pdfPath)
+			win.close()
+		})
+	})
+});
 
 app.on('ready',muestraPantallaPrincipal)
-
 
 
 
